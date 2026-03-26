@@ -1,0 +1,21 @@
+name: traffic_signal_optimization
+version: 1.0
+
+observation_space:
+  type: Observation
+
+action_space:
+  type: Action
+
+reward:
+  type: float
+
+tasks:
+  - name: reduce_congestion
+    difficulty: easy
+  - name: balance_flow
+    difficulty: medium
+  - name: peak_hour_control
+    difficulty: hard
+
+max_steps: 200

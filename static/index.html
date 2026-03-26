@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Visualization</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .lane { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .phase { font-weight: bold; color: green; }
+        .phase.ALL_RED { color: red; }
+        .phase.EW_GREEN { color: blue; }
+        .phase.NS_GREEN { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Traffic Signal Control Visualization</h1>
+    <div id="timestep">Timestep: 0</div>
+    <div id="phase" class="phase">Phase: NS_GREEN</div>
+    <div id="lanes"></div>
+
+    <script src="visual.js"></script>
+</body>
+</html>
